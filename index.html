@@ -37,6 +37,22 @@
   .github:hover {
     color: #333; /* GitHub black */
   }
+
+
+  
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 1.2s ease-out;
+}
 </style>
 </head>
 <body>
@@ -46,9 +62,9 @@
 
 <nav class="bg-white border-gray-200 dark:bg-gray-900">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">O/A</span>
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="page.jpg" class="h-8" alt="Flowbite Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Developer</span>
     </a>
     <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
@@ -79,220 +95,184 @@
   </header>
   <main> 
 
-<div class="hero bg-base-200 min-h-screen">
-  <div class="hero-content flex-col lg:flex-row-reverse">
-    <img
-      src="photo.jpg"
-      class="max-w-sm rounded-lg shadow-2xl mt-12"
-    />
-    <div>
-      <h5 style="color: rgb(250, 193, 6);">Hello,I'm</h5>
-      <h1 class="text-5xl font-bold "><span style="font-size:xx-large; color: rgb(70, 6, 131); font-family: 'Courier New', Courier, monospace;">OJOK ALFRED</span></h1>
-      <h3 style="font-size: x-large; font-style: italic;">A Creative Developer <span style="color: rgb(255, 85, 85);">From Gulu, Uganda</span> </h3>
-      <p class="py-6" style="font-size: large;">
-        I build visually stunning and highly functional web  <br> applications with a blend of creativity and code. <br>
-        I specialize in crafting mobile-first, user-centric experiences using cutting-edge technologies
-      </p>
-    </div>
-  </div>
+<div class="hero bg-base-200 min-h-screen">   
+  <div class="hero-content display flex justify-between flex-col lg:flex-row-reverse">        
+
+    <div class="mt-12 animate__animated animate__fadeInLeft">       
+      <h5 style="color: rgb(250, 193, 6);" class="animate__zoomIn">Hello,I'm</h5>       
+      <h1 class="text-5xl font-bold animate__animated animate__fadeInDown">
+        <span style="font-size:xx-large; color: rgb(70, 6, 131); font-family: 'Courier New', Courier, monospace;">OJOK ALFRED</span>
+      </h1>       
+      <h3 style="font-size: x-large; font-style: italic;" class="animate__animated animate__fadeInUp animate__delay-1s">
+        A Creative Developer <span style="color: rgb(255, 85, 85);">From Gulu, Uganda</span> 
+      </h3>       
+      <p class="py-6 animate__animated animate__fadeIn animate__delay-2s" style="font-size: large;">         
+        I build visually stunning and highly functional web  <br> 
+        applications with a blend of creativity and code. <br>         
+        I specialize in crafting mobile-first, user-centric experiences using cutting-edge technologies       
+      </p>     
+    </div>       
+
+    <img src="photo.jpg" class="max-w-sm rounded-lg shadow-2xl mt-4 animate__animated animate__zoomIn animate__delay-1s" />   
+  </div> 
 </div>
 
-<div style="margin: 50px; display: flex; gap: 20px; font-size: 40px;">
+
+<!-- Add Animate.css CDN in your <head> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+<div style="margin: 50px; display: flex; gap: 20px; font-size: 40px;" class="animate-slideIn">
   <!-- LinkedIn -->
-  <a href="https://www.linkedin.com" target="_blank" class="icon linkedin">
+  <a href="https://www.linkedin.com" target="_blank" class="icon linkedin hover:animate-slideIn">
     <ion-icon name="logo-linkedin" ></ion-icon>
   </a>
 
-
   <!-- WhatsApp -->
-  <a href="https://wa.me/256777520905" target="_blank"  class="icon whatsapp">
+  <a href="https://wa.me/256777520905" target="_blank"  class="icon whatsapp hover:animate-slideIn">
     <ion-icon name="logo-whatsapp"></ion-icon>
   </a>
 
   <!-- Email -->
-  <a href="mailto:ojokalfred1996@gmail.com"  class="icon email">
+  <a href="mailto:ojokalfred1996@gmail.com"  class="icon email hover:animate-slideIn">
     <ion-icon name="mail-sharp"></ion-icon>
   </a>
 
   <!-- GitHub -->
-  <a href="https://github.com/ojok314" target="_blank" class="icon github">
+  <a href="https://github.com/ojok314" target="_blank" class="icon github hover:animate-slideIn">
     <ion-icon name="logo-github"></ion-icon>
   </a>
 </div>
 
 <!---Yellow button-->
-
 <div class="ml-12" style="margin-bottom: 10px;">
   <button 
     type="button" 
     class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none 
            focus:ring-4 focus:ring-yellow-300 font-semibold rounded-full 
            text-base px-6 py-3 shadow-lg transform transition 
-           duration-300 hover:scale-105 dark:focus:ring-yellow-900">
+           duration-300 hover:scale-105 dark:focus:ring-yellow-900 animate-pulse">
     About me
   </button>
 </div>
 
-
-  <div class="card card-side bg-base-100 shadow-sm">
-    <figure class="w-96 h-56 overflow-hidden rounded-lg">
-      <img src="photo.jpg" alt="Movie" class="object-cover w-96 h-56 mt-4" />
-    </figure>
-    <div class="ml-4 ">
-      <h5 class="card-title"> <span style="font-size: x-large; color: rgb(8, 245, 166);">I'm a Developer!</span></h5>
-      <h1 class="text-4xl  text-gray-800 mb-4">I Can Design and Build <br> Engaging Digital Products</h1>
-      <p>Hi there! I’m Alfred, a passionate web developer with a keen eye for  <br> design and 
-        over 6 months of hands-on experience in frontend <br> technologies. I thrive on turning complex problems into intuitive
-         digital <br> solutions. From wireframes to deployment, I enjoy bringing 
-        ideas to life <br> and collaborating with teams to build impactful experiences..</p>
-      
-    </div>
+<div class="card card-side bg-base-100 shadow-sm animate__animated animate__zoomIn">
+  <figure class="w-96 h-56 overflow-hidden rounded-lg">
+    <img src="code.jpg" alt="Movie" class="object-cover w-96 h-56 mt-4 ml-4 hover:animate-pulse" />
+  </figure>
+  <div class="ml-4 animate-slideIn">
+    <h5 class="card-title"> 
+      <span style="font-size: x-large; color: rgb(8, 245, 166);" class="animate__delay-2s">
+        I'm a Developer!
+      </span>
+    </h5>
+    <h1 class="text-4xl text-gray-800 mb-4 animate-fadeIn">
+      I Can Design and Build <br> Engaging Digital Products
+    </h1>
+    <p class="animate__zoomIn">
+      Hi there! I’m Alfred, a passionate web developer with a keen eye for  <br> design and 
+      over 6 months of hands-on experience in frontend <br> technologies. I thrive on turning complex problems into intuitive
+       digital <br> solutions. From wireframes to deployment, I enjoy bringing 
+      ideas to life <br> and collaborating with teams to build impactful experiences..
+    </p>
   </div>
+</div>
 
 
-
-  <div class="card-actions justify-center gap-4 mt-6">
+<div class="card-actions justify-center gap-4 mt-6 animate-zoomdown">
   <!-- Yellow Button -->
   <button 
     type="button" 
     class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none 
            focus:ring-4 focus:ring-yellow-300 font-semibold rounded-full 
            text-sm px-6 py-3 shadow-md transform transition 
-           duration-300 hover:scale-105 dark:focus:ring-yellow-900">
+           duration-300 hover:scale-105 dark:focus:ring-yellow-900 animate-pulse">
     Contact me
   </button>
 </div>
 
-
 <!--portfolio-->
-<div class="text-center my-12">
-  <h6 class="text-yellow-500 uppercase tracking-widest font-semibold mb-2">
+<div class="text-center my-12 animate-fadeIn">
+  <h6 class="text-yellow-500 uppercase tracking-widest font-semibold mb-2 animate-bounce">
     Portfolio
   </h6>
-  <h1 class="text-4xl font-bold text-gray-800 mb-4">
+  <h1 class="text-4xl font-bold text-gray-800 mb-4 animate-slideIn">
     MY AMAZING WORK
   </h1>
-  <p class="text-gray-600 max-w-xl mx-auto">
+  <p class="text-gray-600 max-w-xl mx-auto animate-slideIn">
     Take a look at some of my projects
   </p>
 </div>
 
-
-<div class="display flex justify-between">
-<div class="card bg-base-300 hover:bg-blue-800 w-96 shadow-sm">
-  <figure class="px-10 pt-10">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes"
-      class="rounded-xl" />
-  </figure>
-  <div class="card-body items-center text-center   hover:text-aqua-600 ">
-    <h2 class="card-title">EduBridge Platform</h2>
-    <p>
-      
-A responsive web app built for 
- educational institutions 
-to manage online  classes, assignments, and student progress.
- Developed using React.js, Firebase, and Tailwind CSS.
-    </p>
-    <div class="card-actions">
-      <p style="color: #1bf3e8; font-weight: 600;">Read More <ion-icon name="arrow-forward-outline"></ion-icon></p>
+<div class="display flex justify-between ml-2">
+  <div class="card bg-base-300 hover:bg-blue-800 w-96 shadow-sm transform transition duration-500 hover:scale-105 animate-fadeIn">
+    <figure class="px-10 pt-10">
+      <img src="" alt="Shoes" class="rounded-xl hover:animate-slideIn" />
+    </figure>
+    <div class="card-body items-center text-center hover:text-white">
+      <h2 class="card-title">EduBridge Platform</h2>
+      <p>
+        A responsive web app built for 
+        educational institutions 
+        to manage online classes, assignments, and student progress.
+        Developed using React.js, Firebase, and Tailwind CSS.
+      </p>
+      <div class="card-actions">
+        <p style="color: #1bf3e8; font-weight: 600;">Read More <ion-icon name="arrow-forward-outline"></ion-icon></p>
+      </div>
     </div>
   </div>
+
+  <!-- Repeat for other cards with same hover + animation -->
 </div>
 
-<div class="card bg-base-100 w-96 shadow-sm">
-  <figure class="px-10 pt-10">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes"
-      class="rounded-xl" />
-  </figure>
-  <div class="card-body items-center text-center">
-    <h2 class="card-title">Card Title</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div class="card-actions">
-      <button class="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div>
-
-<div class="card bg-base-100 w-96 shadow-sm">
-  <figure class="px-10 pt-10">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes"
-      class="rounded-xl" />
-  </figure>
-  <div class="card-body items-center text-center">
-    <h2 class="card-title">Card Title</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div class="card-actions">
-      <button class="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div>
-</div>
-
-
-<div class="text-center my-16 px-6">
-  <!-- Heading -->
-  <h1 class="text-4xl font-bold text-gray-800 mb-6">
+<div class="text-center my-16 px-6 animate__animated animate__zoomIn">
+  <h1 class="text-4xl font-bold text-gray-800 mb-6 animate-bounce">
     Get In Touch
   </h1>
-
-  <!-- Paragraph -->
-  <p class="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto mb-8">
+  <p class="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto mb-8 animate-fadeInUp">
     Whether you’re hiring, seeking collaboration, or just want to say hello, <br>
     I’m always open to connecting with like-minded creatives and tech <br>
     enthusiasts. Let's build something great together.
   </p>
 
-  <!-- Social Media Icons -->
   <div class="flex justify-center gap-8 text-4xl mb-8">
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com" target="_blank" class="icon linkedin text-gray-500 hover:text-[#0077b5] transition duration-300">
+    <a href="https://www.linkedin.com" target="_blank" class="icon linkedin text-gray-500 hover:text-[#0077b5] transition duration-300 hover:animate-bounce">
       <ion-icon name="logo-linkedin"></ion-icon>
     </a>
-
-    <!-- WhatsApp -->
-    <a href="https://wa.me/256777520905" target="_blank" class="icon whatsapp text-gray-500 hover:text-[#25D366] transition duration-300">
+    <a href="https://wa.me/256777520905" target="_blank" class="icon whatsapp text-gray-500 hover:text-[#25D366] transition duration-300 hover:animate-bounce">
       <ion-icon name="logo-whatsapp"></ion-icon>
     </a>
-
-    <!-- Email -->
-    <a href="mailto:ojokalfred1996@gmail.com" class="icon email text-gray-500 hover:text-[#d93025] transition duration-300">
+    <a href="mailto:ojokalfred1996@gmail.com" class="icon email text-gray-500 hover:text-[#d93025] transition duration-300 hover:animate-bounce">
       <ion-icon name="mail-sharp"></ion-icon>
     </a>
-
-    <!-- GitHub -->
-    <a href="https://github.com/ojok314" target="_blank" class="icon github text-gray-500 hover:text-black transition duration-300">
+    <a href="https://github.com/ojok314" target="_blank" class="icon github text-gray-500 hover:text-black transition duration-300 hover:animate-bounce">
       <ion-icon name="logo-github"></ion-icon>
     </a>
   </div>
 
-  <!-- Button -->
   <button 
     type="button" 
     class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none 
            focus:ring-4 focus:ring-yellow-300 font-semibold rounded-full 
            text-base px-6 py-3 shadow-lg transform transition 
-           duration-300 hover:scale-105 dark:focus:ring-yellow-900">
+           duration-300 hover:scale-105 dark:focus:ring-yellow-900 animate-pulse">
     Say Hello
   </button>
 </div>
-   </main>
 
 <hr>
-
-  <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
-  <aside>
-    <p>
-      Made with creativity and lots of coffee by Ojok Alfred <br> © 2025
+<footer class="bg-gray-900 text-gray-300 py-6 mt-12 animate-fadeInUp">
+  <aside class="text-center">
+    <p class="text-sm md:text-base">
+      Made with creativity and lots of by 
+      <span class="font-semibold text-white hover:text-blue-400 transition-colors duration-300">
+        Ojok Alfred
+      </span>
+      <br> © 2025
     </p>
   </aside>
 </footer>
-
 
    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
